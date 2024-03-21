@@ -31,6 +31,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: bold;
 }
 
 .show-more-title {
@@ -372,6 +373,8 @@ form {
 .activities {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    padding-top: 55px;
 }
 
 .activities p {
@@ -390,19 +393,28 @@ form {
     justify-content: space-between;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-top: 30px;
 }
 
 .activities a {
     display: flex;
     flex-direction: row;
+    margin: 10px;
+    width: 25%;
 }
+.activities a:first-child {
+    margin-left: 0;
+}
+.activities a:last-child {
+    margin-right: 0;
+}
+
 
 .activities .card {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     padding: 0;
-    width: 297px;
     height: 439px;
 }
 
