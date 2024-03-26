@@ -54,7 +54,7 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .euro {
@@ -123,7 +123,6 @@ form {
     display: flex;
     border-radius: 15px;
     margin-top: 35px;
-    width: 377px;
     height: 49px;
     font-size: 18px;
     align-items: center;
@@ -316,7 +315,7 @@ button.submit {
 
 .hebergements-cards .card-content {
     width: 100%;
-    padding-left: 15px;
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -331,6 +330,7 @@ button.submit {
 
 .hebergements-cards .card-subtitle {
     margin: 0;
+    font-size: 12px;
 }
 
 .hebergements-cards .card-rating {
@@ -363,7 +363,7 @@ button.submit {
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -378,6 +378,7 @@ button.submit {
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    font-size: 12px;
 }
 
 .populaires-cards .card-rating {
@@ -442,9 +443,9 @@ button.submit {
 }
 
 .activities .card-title {
-    padding: 20px 19px;
-    font-size: 16px;
+    padding: 20px 15px;
     font-weight: 700;
+    font-size: 12px;
 }
 
 /****** Footer ***********/
@@ -569,7 +570,7 @@ button.submit {
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .activities {
@@ -674,7 +675,7 @@ button.submit {
 
     .search {
         border-right: none;
-        width: 70%;
+        width: 200px;
     }
 
     button.submit {
@@ -684,7 +685,7 @@ button.submit {
         height: 49px;
         width: 49px;
         position: absolute;
-        right: 25px;
+        left: 255px;
     }
 
     input.submit {
@@ -693,6 +694,10 @@ button.submit {
 
     .info i {
         margin-right: 10px;
+    }
+
+    .card-title {
+        font-size: 16px;
     }
 
     #hebergements {
@@ -720,6 +725,10 @@ button.submit {
         flex-direction: column;
     }
 
+    .populaires-cards .card-subtitle {
+        font-size: 14px;
+    }
+
     .populaires-cards a {
         width: 100%;
         padding-top: 0px;
@@ -732,6 +741,10 @@ button.submit {
     .hebergements-row {
         flex-direction: column;
         margin-top: 15px;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: 14px;
     }
 
     .hebergements-cards a {
@@ -748,6 +761,10 @@ button.submit {
 
     .activities .card {
         flex-basis: 100%;
+    }
+
+    .activities .card-title {
+        font-size: 16px;
     }
 
     .activities a {
