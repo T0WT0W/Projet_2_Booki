@@ -194,18 +194,27 @@ button.submit {
     font-weight: 700;
 }
 
-.filters-buttons {
+.filters-buttons-up {
     display: flex;
     flex-direction: row;
     font-size: 17px;
-    width: 100%;
     font-weight: 700;
     align-items: center;
     margin-top: 35px;
     margin-bottom: 35px;
 }
 
-.filters-buttons a {
+.filters-buttons-down {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: 700;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.filters-buttons-up a {
     display: flex;
     flex-direction: row;
     border: 2px solid #d9d9d9;
@@ -215,11 +224,29 @@ button.submit {
     margin-left: 19px;
 }
 
-.filters-buttons a:hover{
+.filters-buttons-down a {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #d9d9d9;
+    align-items: center;
+    border-radius: 25px;
+    height: 50px;
+    margin-left: 19px;
+}
+
+.filters-buttons-up a:hover {
     background-color: #DEEBFF;
 }
 
-.filters-buttons i {
+.filters-buttons-down a:hover {
+    background-color: #DEEBFF;
+}
+
+.filters-buttons-up i {
+    margin: 15px;
+}
+
+.filters-buttons-down i {
     margin: 15px;
 }
 
@@ -512,34 +539,55 @@ button.submit {
 @media (max-width: 1024px) {
     .filters {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: start;
         margin-top: 35px;
     }
 
     .filters h2 {
         margin-bottom: 20px;
+        width: 100%;
     }
 
-    .filters-buttons {
+    .filters-buttons-up {
         margin-top: 0;
     }
 
-    .filters-buttons a {
+    .filters-buttons-up a {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .filters-buttons-down {
+        margin-top: 0;
+    }
+
+    .filters-buttons-down a {
         margin-left: 0;
         font-size: 16px;
     }
 
     .eco {
-        margin-right: 15px;
+        margin-right: 10px;
+        padding-right: 5px;
+        width: 150px;
     }
 
     .family {
-        margin-right: 15px;
+        margin-right: 10px;
+        padding-right: 5px;
+        width: 150px;
     }
 
     .romance {
-        margin-right: 15px;
+        margin-right: 10px;
+        padding-right: 5px;
+        width: 150px;
+    }
+
+    .gem {
+        padding-right: 5px;
+        width: 150px;
     }
     
     #hebergements {
@@ -639,36 +687,6 @@ button.submit {
         margin-top: 0;
     }
 
-    .filters {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        height: auto;
-    }
-
-    .filters-buttons {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .filters-buttons a {
-        font-size: 14px;
-        width: 150px;
-    }
-
-    .eco {
-        margin-right: 22px;
-        margin-bottom: 15px;
-    }
-
-    .family {
-        margin-bottom: 15px;
-    }
-
-    .romance {
-        margin-right: 22px;
-    }
-
     form {
         width: 100%;
     }
@@ -690,6 +708,58 @@ button.submit {
 
     input.submit {
         display: none;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        margin-bottom: 35px;
+    }
+
+    .filters-buttons-up {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .filters-buttons-up a {
+        font-size: 14px;
+        width: 122px;
+    }
+
+    .filters-buttons-down {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .filters-buttons-down a {
+        font-size: 14px;
+        width: 122px;
+    }
+
+    .eco {
+        margin-right: 22px;
+        padding-right: 15px;
+    }
+
+    .family {
+        padding-right: 15px;
+    }
+
+    .romance {
+        margin-right: 22px;
+        padding-right: 15px;
+    }
+
+    .gem {
+        padding-right: 15px;
+    }
+
+    .info {
+        margin-bottom: 20px;
     }
 
     .info i {
